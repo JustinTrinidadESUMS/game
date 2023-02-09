@@ -29,3 +29,22 @@ Favorite Games:
 
     </body>
 </html>
+
+WIDTH = 1500
+HEIGHT = 1000
+
+def draw():
+    screen.fill((0,0,0))
+character = Actor('character')
+character.pos = 150, 556
+HEIGHT = character.height + 1000
+
+def draw():
+    screen.clear()
+    character.draw()
+def on_mouse_down(pos):
+    if character.collidepoint(pos):
+        print("what color is your buggatti")
+def on_mouse_down(pos):
+    if character.collidepoint(pos):
+        character.image = 'characterhit'
